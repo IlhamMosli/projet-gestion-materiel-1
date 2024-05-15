@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <Context path="/projet-gestion-materiel_1"/>
 
+=======
+<Context path="/materiel"/>
+>>>>>>> 778847d (interv-jsp)
