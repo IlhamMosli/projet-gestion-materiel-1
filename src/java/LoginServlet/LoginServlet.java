@@ -19,11 +19,9 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String user = request.getParameter("username");
-        String password = request.getParameter("password");
+        
 
         if (user.equals(UTILISATEUR_UNIQUE) && password.equals(MOT_DE_PASSE_UNIQUE)) {
-            // Redirect to success page
             response.sendRedirect("success.jsp");
         } else {
             // Display error message
