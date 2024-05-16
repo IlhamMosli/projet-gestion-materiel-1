@@ -38,62 +38,7 @@
                         // Si une intervention est trouvée pour la série spécifiée
                         if (rs.next()) {
                     %>   
-                    <div class="form-group">
-                        <label for="serie">Série de matériel:</label>
-                        <input type="text" class="form-control" id="serie" name="serieI" value="<%= rs.getString("serieI") %>" readonly>
-                    </div>
-                    <div class="form-group">
-                        <label for="technicien">Nom du technicien:</label>
-                        <input type="text" class="form-control" id="technicien" name="technicien" value="<%= rs.getString("technicien") %>" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="telephone">Téléphone:</label>
-                        <input type="text" class="form-control" id="telephone" name="telephone" value="<%= rs.getString("telephone") %>" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="description">Description:</label>
-                        <textarea class="form-control" id="description" name="description" required><%= rs.getString("description") %></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="solution">Solution:</label>
-                        <textarea class="form-control" id="solution" name="solution" required><%= rs.getString("solution") %></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Save</button>
-                    <a href="intervention.jsp" class="btn btn-secondary">Cancel</a>
-                    <% 
-                        } else {
-                            // Aucune intervention trouvée pour cette série
-                            out.println("Aucune intervention trouvée pour la série: " + serieI);
-                        }
-                    } catch (Exception e) {
-                        // Gestion des exceptions
-                        e.printStackTrace();
-                    } finally {
-                        // Fermeture des ressources
-                        if (rs != null) {
-                            try {
-                                rs.close();
-                            } catch (SQLException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                        if (pst != null) {
-                            try {
-                                pst.close();
-                            } catch (SQLException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                        if (con != null) {
-                            try {
-                                con.close();
-                            } catch (SQLException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
-                    %>
-                </form>
+                   
             </div>
         </div>
     </div>
