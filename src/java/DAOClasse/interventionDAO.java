@@ -13,10 +13,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-/**
- *
- * @author AbdelmoulaMoukrime
- */
+
 @WebServlet(name = "InterventionDAO", urlPatterns = {"/InterventionDAO"})
 public class InterventionDAO extends HttpServlet {
 
