@@ -18,7 +18,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name = "AjouterIntervention", urlPatterns = {"/AjouterIntervention"})
+
+@WebServlet("/AjouterIntervention")
 public class AjouterInterventionServlet extends HttpServlet {
 
   protected void doPost(HttpServletRequest request, HttpServletResponse response)
