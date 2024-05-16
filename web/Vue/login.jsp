@@ -90,10 +90,10 @@ function ValidateEmail(emailId)
 </head>
 <body>
 
-  <form action="LogineServletDAO" method="post">
+  <form action="loginv.jsp" method="post">
     <div class="container">
       <label for="username"><b>Email</b></label>
-      <input type="text" placeholder="Please enter your email" name="emailId" id="emailId" required>
+      <input type="text" placeholder="Please enter your email" name="uname" id="uname" required>
 
       <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Please enter Password" name="password" id="password" required>
