@@ -346,12 +346,13 @@ function test(){
 $(document).ready(function(){
 	setTimeout(function(){ test(); });
 });
-$(window).on('resize', function(){
-	setTimeout(function(){ test(); }, 500);
-});
+
 $(".navbar-toggler").click(function(){
 	$(".navbar-collapse").slideToggle(300);
 	setTimeout(function(){ test(); });
+	$(window).on('resize', function(){
+	setTimeout(function(){ test(); }, 500);
+});
 });
 
 
