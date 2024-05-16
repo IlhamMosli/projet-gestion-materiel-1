@@ -26,12 +26,12 @@ public class AjouterInterventionServlet extends HttpServlet {
             throws ServletException, IOException {
         
         String serie = request.getParameter("serieI");
-        String nom = request.getParameter("nomI");
+        
         String date = request.getParameter("dateI");
         String telephone = request.getParameter("telephoneI");
         String description = request.getParameter("descriptionI");
         String solution = request.getParameter("solutionI");
-
+        String nom = request.getParameter("nomI");
         // Insérer les données dans la base de données
         InterventionDAO.insertIntervention(serie, nom, date, telephone, description, solution);
 
