@@ -14,6 +14,4 @@ String serieI = request.getParameter("serieI");
 pst.setString(1,serieI);
 pst.executeUpdate();
  
-out.println("record deleted");
-response.sendRedirect("intervention.jsp");
- %>
+
